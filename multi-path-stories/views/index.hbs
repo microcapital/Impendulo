@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<a href="/0"> Back to start</a>
+<table style="width:100%">
+  <tr>
+    <td></td>
+    <td>
+      {{#unless submitted1}}
+      {{>form1}}
+      {{else}}
+      {{>link1}}
+      {{/unless}}
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>
+      {{#unless submitted2}}
+      {{>form2}}
+      {{else}}
+      {{>link2}}
+      {{/unless}}
+    </td>
+    <td><h3>{{heading}}</h3></td>
+    <td>
+      {{#unless submitted3}}
+      {{>form3}}
+      {{else}}
+      {{>link3}}
+      {{/unless}}
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>{{#unless submitted4}}
+      {{>form4}}
+      {{else}}
+      {{>link4}}
+      {{/unless}}</td>
+    <td></td>
+  </tr>
+</table>
+
+</html>

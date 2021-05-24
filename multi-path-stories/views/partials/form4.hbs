@@ -1,0 +1,14 @@
+<form action="/{{parentId}}" method="post">
+    <textarea name="sentence2"></textarea>
+    <input type="text" name="parent" value="{{parentId}}" placeholder="{{parentId}}" class="hide">
+    <input type="text" name="submit2" value="true" placeholder="{{submitted2}}" class="hide">
+    {{#if submitted1}}
+    <input type="text" name="submit1" value="true" placeholder="{{submitted1}}" class="hide">
+    {{/if}}
+    {{#if submitted3}}
+    <input type="text" name="submit3" value="true" placeholder="{{submitted3}}" class="hide">
+    {{/if}}
+    {{#if submitted4}}
+    <input type="text" name="submit4" value="true" placeholder="{{submitted4}}" class="hide">
+    {{/if}}
+    <button type="submit">Submit</button></form>
